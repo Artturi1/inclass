@@ -6,7 +6,8 @@ tools {
 stages {
 stage('Checkout') {
 steps {
-git 'https://github.com/Artturi1/inclass'
+  git branch: 'main',
+    url: 'https://github.com/Artturi1/inclass.git'
 }
 }
 stage('Build') {
